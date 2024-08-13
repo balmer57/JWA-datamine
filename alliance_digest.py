@@ -3,9 +3,7 @@ from utilities import *
 with open(JSON_DIR + "players.json") as f:
     data = json.load(f)
 
-data = list(data.values())[50:]
-DWA = data[50:]
-LF = data[:50]
+data = list(data.values())
 
 
 def print_creatures(alliance):
@@ -19,4 +17,4 @@ def print_creatures(alliance):
             print(f'{name}\t{c_name}\t{rarity}\t{level}\t{boosts[0]}\t{boosts[1]}\t{boosts[2]}')
 
 
-print_creatures(LF)
+print_creatures(data)

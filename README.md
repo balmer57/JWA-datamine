@@ -4,7 +4,7 @@
 **On PC:**<br>
 - Python 3 to run scripts. (And some modules, could be installed by pip). <br>
 - Apktool to unpack APK file.<br>
-- AssetStudio to unpack assets (creature pictures).<br>
+- AssetStudio to unpack assets from AssetBundles (creature pictures).<br>
 
 **On phone:**<br>
 - PCAPdroid to capture traffic.<br>
@@ -16,7 +16,7 @@
 **unpcap.py** - Unpacks pcap file.
 
 ## Main processing
-**SplitConversation.py** - Data analyzer. Unpacks the pcap file and performs a preliminary analysis.<br>
+**SplitConversation.py** - Data analyzer. Unpacks the pcap file and performs a preliminary analysis. You need to run this before some other scripts. <br>
 **Parse_APK.py** - Parses new APK file. Only calls some other scripts, may be done manually.<br>
 **analize_encryption.py** - Parses changes between versions (unpacks com.ludia.jw2\cache\OnlineOptionCache).
 
@@ -46,7 +46,7 @@
 **fill_gtable.py** - Creature list with DNA (for external use).
 
 ## Player statistics
-(You need to click on players you want to analyze)<br>
+(You need to click on players you want to analyze while capturing data)<br>
 **acc_stats.py** - Some account metrics.<br>
 **alliance_digest.py** - Creatures stats.<br>
 **XP.py** - Players' XP.<br>
